@@ -1,11 +1,19 @@
-# Step 1: Create mysql db from RDS 
+# Step 1: Create mysql db from RDS (make sure you allow All traffic for ipv4 in SG for DB)
+          If you dont add SG then you wont be allowd to connect db in step 4
+          
 # Step 2: Launch Ubuntu Server
+
 # Step 3: run following commands on ubuntu
 
-sudo apt-get update
+          sudo apt-get update
 
-# For Sql-client
-sudo apt-get install mysql-client
+          # For Sql-client
+          sudo apt-get install mysql-client
+
+# Step 4: Connect to mysql by using following cmd 
+           "mysql -h {Endpoint-of-your-db} -u {username} -p"
+           enter password
+
 
 # For python and related frameworks (as this app is python based)
 

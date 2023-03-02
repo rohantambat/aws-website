@@ -25,13 +25,40 @@
           custombucket = "addemployee89"
           customregion = "us-east-1"
 
+# Step 7: Clone repo to server
 
-# For python and related frameworks (as this app is python based)
+# Step 8: Cd to cloned repo and install following packages
 
-sudo apt-get install python3
-sudo apt-get install python3-flask
-sudo apt-get install python3-pymysql
-sudo apt-get install python3-boto3
+          # For python and related frameworks (as this app is python based)
+          sudo apt-get install python3
+          sudo apt-get install python3-flask
+          sudo apt-get install python3-pymysql
+          sudo apt-get install python3-boto3
 
-# for running application
-sudo python3 Empapp.py
+# Step 9: run below cmd for running application
+          sudo python3 Empapp.py
+          and then copy public ip of server and hit url. app will be open
+          
+          
+--------------
+# Problem Statement #
+
+- you fill data from all
+- select file and upload it using form
+
+You will get error "Unable to locate credentials"
+also
+If u navigate to s3 bucket, you will not see any object uploaded.
+
+=> Solution =>
+You need to give access to ec2 instance to upload the data to s3. for that:
+- Create IAM role with Adminstrator Access (permission)
+- Select instance >> Action >> Security >> Modify Iam role --> select created IAM role and save it
+
+Try to access website and upload image. It should be uploaded
+
+-------
+
+# Step 10: Use route53 for domain name change
+
+

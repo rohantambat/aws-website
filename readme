@@ -14,6 +14,17 @@
            "mysql -h {Endpoint-of-your-db} -u {username} -p"
            enter password
 
+# Step 5: Create db, table (with required fields)
+
+# Step 6: Edit Config.py file and add required details about database and server
+          
+          customhost = "employeedb.c3mzovow4pf1.us-east-1.rds.amazonaws.com"
+          customuser = "admin"
+          custompass = "Rohan123"
+          customdb = "employeedb"
+          custombucket = "addemployee89"
+          customregion = "us-east-1"
+
 
 # For python and related frameworks (as this app is python based)
 

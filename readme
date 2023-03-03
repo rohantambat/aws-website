@@ -1,4 +1,4 @@
-# Step 1: Create mysql db from RDS (make sure you allow All traffic for ipv4 in SG for DB)
+# Step 1: Create mysql db from RDS (For practice purpose, make sure you allow All traffic for ipv4 in SG for DB)
           If you dont add SG then you wont be allowd to connect db in step 4
           
 # Step 2: Launch Ubuntu Server

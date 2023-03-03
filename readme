@@ -29,7 +29,7 @@
 
 # Step 8: Cd to cloned repo and install following packages
 
-          # For python and related frameworks (as this app is python based)
+          # For python and related frameworks (as this website is python based)
           sudo apt-get install python3
           sudo apt-get install python3-flask
           sudo apt-get install python3-pymysql
@@ -37,18 +37,18 @@
 
 # Step 9: run below cmd for running application
           sudo python3 Empapp.py
-          and then copy public ip of server and hit url. app will be open
+          and then copy public ip of server and hit url. Website will be open
           
           
 --------------
 # Problem Statement #
 
-- you fill data from all
+- you fill all the data
 - select file and upload it using form
 
-You will get error "Unable to locate credentials"
+You get an error "Unable to locate credentials"
 also
-If u navigate to s3 bucket, you will not see any object uploaded.
+If u navigate to s3 bucket, you won't see any object uploaded.
 
 => Solution =>
 You need to give access to ec2 instance to upload the data to s3. for that:
